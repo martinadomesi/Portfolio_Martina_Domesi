@@ -1,0 +1,227 @@
+/* variables */
+$light: #fff2b8;
+$lila: #e2a9ca;
+$lilaclaro: #d196b5;
+$blue: #284194;
+$naranja: #d55015;
+$gris:#393a40;
+$texto:1.2rem;
+$total:100vh;
+$margen:2rem;
+$padding:2rem;
+
+// /* imports */
+;@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;700;800;900&display=swap');
+
+@import "_header";
+
+body{
+    background-color: $light;
+    padding: $padding/4;
+    margin: $margen;
+}
+
+body{
+    main{
+        section{
+            padding-top: $padding*1.5;
+            flex-direction: column;
+        }
+        
+    }
+}
+h1{
+    font-size: $texto*3;
+    font-family:'Jost', sans-serif;
+    font-weight: 900;
+    color: $lila;
+}
+
+h2{
+    font-size: $texto*2.5;
+    font-family: 'Krona One', sans-serif;
+    font-variant-caps: petite-caps;
+    letter-spacing: $texto/10;
+    color: $blue;
+    font-weight: bolder;
+}
+
+h3{
+    font-size: $texto*2.2;
+    font-family:'Jost', sans-serif;
+    color: $naranja;
+    letter-spacing: 2px;
+    display: flex;
+}
+
+div{
+    section{
+        aside{
+            p{             
+                font-family: 'Krona One', sans-serif;
+                font-size: 1.5rem;
+		        line-height: 2rem;
+                color: white;
+                background-color: $naranja;
+                margin-top: $margen*3;
+                padding: $padding*1.25;
+                height: auto;
+            }
+        }
+    }
+}
+
+.right{
+    float: right;
+}
+
+main{
+    section{
+        p{
+            font-size: 0.9rem;
+            font-family: 'Jost', sans-serif;
+            line-height: $texto;
+            text-transform: none;
+            text-align: left;
+            color:$gris;
+        }
+    }
+}
+
+.containerFotos{
+    margin-top: $margen;
+    margin-bottom: $margen;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: $lila;
+    height: 80vh;
+}
+
+.hvr-underline-from-left{
+	  display: inline-block;
+	  vertical-align: middle;
+	  -webkit-transform: perspective(1px) translateZ(0);
+	  transform: perspective(1px) translateZ(0);
+	  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	  position: relative;
+	  overflow: hidden;
+}
+.hvr-underline-from-left:before {
+	  content: "";
+	  position: absolute;
+	  z-index: -1;
+	  left: 0;
+	  right: 100%;
+	  bottom: 0;
+	  background: #284194;
+	  height: 4px;
+	  -webkit-transition-property: right;
+	  transition-property: right;
+	  -webkit-transition-duration: 0.3s;
+	  transition-duration: 0.3s;
+	  -webkit-transition-timing-function: ease-out;
+	  transition-timing-function: ease-out;
+}
+.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+	  right: 0;
+}
+
+@import "_footer";
+
+/* CONTACTO */
+
+#caja{
+    color: #efefef;
+    display: block;
+    height: auto;
+    background-color: $lila;
+    padding: $padding;
+    margin-top: $margen;
+    margin-bottom: $margen;
+}
+
+label, input{
+    display: inline-block;
+}
+
+/* SOBRE MI */
+
+section{
+    table{
+        font-family:'Jost', sans-serif;
+        font-size: $texto;
+    }
+}
+
+table{
+    thead{
+        color: $naranja;
+    }
+}
+
+table{
+    tbody{
+        ol{
+            li{
+                color: $naranja;
+		        font-size: 0.8rem;
+		        line-height: 0.9rem;
+            }
+        }
+    }
+}
+
+p{
+    color: #0b1013;
+    size: $texto;
+}
+
+article{
+    figure{
+        img{
+            float: right;
+        }
+        
+    }
+}
+
+/* GALERIA */
+
+.containerAncho{
+    margin-top: $margen;
+    margin-bottom: $margen;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: $naranja;
+    height: 80vh;
+}
+
+.containerAngosto{
+    margin-top: $margen;
+    margin-bottom: $margen;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: $lila;
+    height: 80vh;
+}
+
+/* $colors:(uno:$naranja, dos:$lila, tres:$lilaclaro, cuatro:$azul);
+
+@each $bg-color in $colors{
+    .fondo-#{$bg-color}{
+        background-color: $bg-color;
+        height:80vh;
+        margin-top: $margen;
+        margin-bottom: $margen;
+        display: flex;
+        align-items: center;
+    }
+} */

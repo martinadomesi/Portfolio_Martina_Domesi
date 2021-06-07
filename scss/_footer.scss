@@ -1,0 +1,31 @@
+footer{
+        padding: 3rem;
+        background-image: url(imagenes/fondo_2-03.jpg);
+		display: flex;		
+		background-position: bottom;
+		align-items: center;
+		justify-content: space-between;	
+}
+
+footer{
+    section{
+        p{
+            display: block;
+            font-family: 'Krona One', sans-serif;
+            font-size: 1rem;
+            line-height: 1.1rem;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+}
+
+section{
+    p{
+        a{
+            font-family: 'Krona One', sans-serif;
+            font-size: 1rem;
+            line-height: 1.1rem;
+        }
+    }
+}
